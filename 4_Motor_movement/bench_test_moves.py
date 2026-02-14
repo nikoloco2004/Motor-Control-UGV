@@ -55,10 +55,10 @@ try:
     # bench_test_with_print(drv, "FORWARD", SPEED, SPEED, SPEED, SPEED, MOVE_TIME)
 
     # BACKWARD
-    bench_test_with_print(drv, "BACKWARD", -SPEED, -SPEED, -SPEED, -SPEED, MOVE_TIME)
+    # bench_test_with_print(drv, "BACKWARD", -SPEED, -SPEED, -SPEED, -SPEED, MOVE_TIME)
 
     # STRAFE RIGHT
-    # bench_test_with_print(drv, "STRAFE RIGHT", SPEED, -SPEED, -SPEED, SPEED, MOVE_TIME)
+    bench_test_with_print(drv, "STRAFE RIGHT", SPEED, -SPEED, -SPEED, SPEED, MOVE_TIME)
 
     # STRAFE LEFT
     # bench_test_with_print(drv, "STRAFE LEFT", -SPEED, SPEED, SPEED, -SPEED, MOVE_TIME)

@@ -28,12 +28,12 @@ class MecanumDrive:
         time.sleep(self.settle_s)
 
         # True when using Teensy single-wheel mapping firmware
-        self.single_wheel_mapping = True
+        self.single_wheel_mapping = False
 
         # Per-motor inversion
         # +1 = normal, -1 = inverted
         # Based on your backward test: right side inverted
-        self.inv = [1, -1, 1, -1]  # FL, FR, BL, BR
+        self.inv = [1, 1, 1, 1]  # FL, FR, BL, BR
 
     def close(self):
         if self.ser and self.ser.is_open:
