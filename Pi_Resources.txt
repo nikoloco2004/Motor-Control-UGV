@@ -1,0 +1,62 @@
+PORT = "/dev/ttyACM0"
+ssh nicopi@172.20.10.3
+
+
+Verify you’re in the right repo (this folder)
+pwd
+ls
+git rev-parse --show-toplevel
+git status
+
+Look at file changes (what changed?)
+git status
+
+See exact line-by-line changes (unstaged)
+git diff
+
+See changes you already staged
+git diff --staged
+
+See a summary of which files changed
+git diff --name-only
+# or
+git diff --stat
+
+3) Make sure this folder is linked to the correct GitHub repo
+git remote -v
+
+If you need to set/fix the GitHub remote URL:
+
+git remote set-url origin <YOUR_GITHUB_REPO_URL>
+
+4) Upload your changes (standard flow)
+Stage changes
+
+Stage everything:
+
+git add .
+
+Or stage a specific file:
+
+git add path/to/file
+
+Commit
+git commit -m "Describe what you changed"
+
+Push to GitHub
+git push origin main
+
+If your branch is master instead:
+
+git push origin master
+
+5) First-time push (if branch/upstream isn’t set)
+git push -u origin main
+
+6) Useful “what will be uploaded?” checks
+git status
+git diff --staged
+git log --oneline -n 3
+7) If Git yells about identity (common on new machines)
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"

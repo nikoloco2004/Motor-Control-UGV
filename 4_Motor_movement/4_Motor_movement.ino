@@ -5,8 +5,8 @@
 const float PWM_FREQ = 20000.0;
 
 // --- Pin mapping (CHANGE THESE TO YOUR WIRING) ---
-const int PWM_PIN[4] = {10, 11, 12, 13};     // PWM pins for motors 1..4
-const int DIR_PIN[4] = {22, 23, 24, 5};     // DIR pins for motors 1..4
+const int PWM_PIN[4] = {10, 11, 13, 12};     // PWM pins for motors 1..4
+const int DIR_PIN[4] = {22, 23, 25, 24};     // DIR pins for motors 1..4
 
 void setMotor(int idx, int value) {
   // idx: 0..3
